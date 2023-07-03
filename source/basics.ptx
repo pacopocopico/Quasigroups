@@ -1,0 +1,84 @@
+<chapter xml:id="ch-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Conceptos básicos</title>
+    <section xml:id="section-title">
+        <title>Definición</title>
+        <p>
+            Sea <m>\symfrak{g}</m> un espacio vectorial sobre un cuerpo <m>\symbb{F}</m>, con una
+            operación <m>\symfrak{g}\times \symfrak{g}\rightarrow \symfrak{g}</m>, que notaremos 
+            <m>(x,y)\mapsto [xy]</m> y llamaremos <em>conmutador</em>. Tal estructura se denomina 
+            <em>álgebra de Lie</em> si el conmutador satisface las siguientes condiciones:
+            <ol>
+                <li>es bilineal;</li>
+                <li><m>[xx]=0\,\text{;}</m></li>
+                <li><m>[x[yz]]+[y[zx]]+[z[xy]]=0\,</m> (identidad de Jacobi);</li>
+            </ol>
+        </p>
+        <p>
+            Por la segunda condición, <m>[x+y,x+y]=0</m>. Pero por la primera,
+            <me>[x+y,x+y]=[x,x+y]+[y,x+y]=[xx]+[xy]+[yx]+[yy]\,\text{,}</me> 
+            y como
+            <m>[xx]=[yy]=0</m>, tenemos que
+            <m>[xy]=-[yx]</m>. A la inversa, si  <m>\symbb{F}</m> es de característica
+            diferente de <m>2</m>, esta igualdad implica la segunda condición.
+        </p>
+        <p>
+            Obsérvese que, en general, un álgebra de Lie puede no ser asociativa.
+        </p>
+        <p>
+            Los conceptos de isomorfismo y subálgebra Lie se definen de la forma 
+            obvia.
+        </p>
+    </section>
+    <section xml:id="sec-linliea">
+        <title>Álgebras lineales de Lie</title>
+        <p>
+            Supongamos un espacio vectorial <m>V</m> de dimensión finita, digamos <m>n</m>, sobre 
+            un cuerpo <m>\symbb{F}\,</m>, y sea <m>\End V</m> el espacio vectorial de las 
+            transformaciones lineales <m>V\rightarrow V</m>, que es de dimensión <m>n^2</m>.
+        </p>
+        <p>
+            Con la composición como producto,  <m>\End V</m> es un anillo (un álgebra asociativa,
+            de hecho). Definiendo
+            <me>
+                [xy]=xy-yx\,\text{,}
+            </me>
+            el conjunto <m>\End V</m> adquiere estructura de álgebra de Lie. Escribiremos
+            <m>\symfrak{gl}(V)</m> en lugar de <m>\End V</m> cuando queramos verlo como
+            un álgebra de Lie, a la que llamaremos <em>álgebra lineal general</em>.    
+        </p>
+        <p>
+            Si fijamos una base para <m>V</m> podemos identificar <m>\symfrak{gl}(V)</m>
+            con el conjunto de las matrices <m>n\times n</m> sobre <m>\symbb{F}</m>,
+            notado  <m>\symfrak{gl}(n,\symbb{F})</m>.
+        </p>
+        <p>
+            Tomamos como base de <m>\symfrak{gl}(n,\symbb{F})</m> el conjunto de matrices
+            <m>e_{ij}</m>, que tienen un <m>1</m> en la posición <m>i,j</m> y <m>0</m> 
+            en el resto de entradas. Entonces <m>e_{ij}e_{kl}=δ_{jk}e_{il}\,</m>, así que
+            <me>
+                [e_{ij}e_{kl}]=δ_{jk}e_{il} - δ_{il}e_{kj}\,\text{.}
+            </me>
+        </p> 
+    </section>
+    <section xml:id="sec-classalg">
+        <title>Álgebras clásicas</title>
+        <p>
+            Vamos a ver cuatro familias de algebras de Lie denominadas
+            <em>álgebras clásicas</em>.
+        </p>
+        <subsection xml:id="subsec-A">
+            <title>Álgebras tipo <m>\symsfup{A}_\symscr{l}</m></title>
+            <p>
+                Sea <m>V</m> de dimensión <m>\symscr{l}+1\,</m>. Escribimos
+                <m>\symfrak{sl}(V)</m> o <m>\symfrak{sl}(\symscr{l}+1,\symbb{F})</m>
+                para el conjunto de endomorfismos de <m>V</m> de traza cero.
+                Por las propiedades de la traza, <m>\symfrak{sl}(V)</m> es una
+                subálgebra de <m>\symfrak{gl}(V)\,</m>, que se denomina 
+                <em>álgebra lineal especial</em> por su conexión con el
+                <em>grupo lineal especial</em>  <m>SL(V)</m> de endomorfismos
+                de determinante igual a <m>1\,</m>.
+            </p>
+        </subsection>
+        
+    </section>
+</chapter>

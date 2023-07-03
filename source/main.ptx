@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+<pretext xml:lang="es-ES" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <docinfo>
     <macros>
       \newcommand{\R}{\mathbb R}
+      \DeclareMathOperator{\End}{End}
     </macros>
     <latex-image-preamble>
       \usepackage{tikz}
@@ -13,19 +14,20 @@
 
   <book xml:id="my-great-book">
     <title>Álgebras de Lie</title>
-    <subtitle>una introducción</subtitle>
+    <!-- subtitle>una introducción</subtitle -->
 
     <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
-          <personname>Yo mismo</personname>
-          <department>Mi casa</department>
-          <institution>Mi casita</institution>
+          <personname>F. Jurado</personname>
+          <!--department>Mi casa</department -->
+          <!-- institution>Mi casita</institution -->
         </author>
         <date>
           <today />
         </date>
       </titlepage>
+
 
       <colophon>
 
@@ -45,7 +47,9 @@
         </copyright>
       </colophon>
     </frontmatter>
+    <xi:include href="basics.ptx"/>
 
+<!--
     <chapter xml:id="chapter-title">
       <title>Chapter title</title>
 
@@ -55,6 +59,8 @@
       </section>
 
     </chapter>
+-->
+
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
