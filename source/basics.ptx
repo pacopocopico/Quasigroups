@@ -123,10 +123,12 @@
             Si <m>x\in L\,</m>, entonces <m>y\mapsto [xy]</m> es un endomorfismo de <m>L</m>,
             que notaremos <m>\ad x\,</m>. De hecho, <m>\ad x\in \Der L\,</m>, porque la identidad
             de Jacobi se puede escribir como <m>[x[yz]]=[[xy]z]+[y[xz]]\,</m>.
-            Estas derivaciones se denominan <em>internas</em>. La función <m>L \rightarrow \Der L</m>
-            que envía <m>x</m> a <m>\ad x</m> se denomina <em>representación adjunta</em> de <m>L\,</m>.
+            Estas derivaciones se denominan <em>internas</em>. 
         </p>
-        
+        <p>
+            La función <m>L \rightarrow \Der L</m> que envía <m>x</m> a <m>\ad x</m> se denomina 
+            <em>representación adjunta</em> de <m>L\,</m>.
+        </p>
         
     
     </section>
