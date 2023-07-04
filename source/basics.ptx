@@ -20,6 +20,12 @@
             <m>[xx]=[yy]=0</m>, tenemos que
             <m>[xy]=-[yx]</m>. A la inversa, si  <m>\symbb{F}</m> es de característica
             diferente de <m>2</m>, esta igualdad implica la segunda condición.
+            Por otra parte,  
+            <m>
+                [x[yz]]=-[z[xy]]-[y[zx]]=[[xy]z]+[y[xz]]\,
+            </m>,
+            así que la identidad de Jacobi se puede escribir también como
+            <me>[x[yz]]=[[xy]z]+[y[xz]]\,</me>.
         </p>
         <p>
             Obsérvese que, en general, un álgebra de Lie puede no ser asociativa.
@@ -66,7 +72,7 @@
             Vamos a ver cuatro familias de algebras de Lie denominadas
             <em>álgebras clásicas</em>.
         </p>
-        <subsection xml:id="subsec-A">
+        <subsection xml:id="A-type">
             <title>Álgebras tipo <m>\symsfup{A}_\symscr{l}</m></title>
             <p>
                 Sea <m>V</m> de dimensión <m>\symscr{l}+1\,</m>. Escribimos
@@ -79,6 +85,49 @@
                 de determinante igual a <m>1\,</m>.
             </p>
         </subsection>
+        <subsection xml:id="C-type-">
+            <title>Álgebras tipo <m>\symsfup{C}_\symscr{l}</m></title>
+            <p>
+                Sea <m>V</m> de dimensión <m>2\symscr{l}\,</m> 
+                con base <m>(v_1,\ldots,v_{2\symscr{l}})\,</m>. Definimos
+                una forma lineal antisimétrica <m>f</m> sobre <m>V</m>
+                mediante
+                <me>
+                    s=\begin{pmatrix}
+                    0 &amp; I_\symscr{l} \\
+                    -I_\symscr{l} &amp; 0
+                    \end{pmatrix}\,\text{.}
+                </me>
+                El <em>álgebra simpléctica</em> <m>\symfrak{sp}(V)</m> o 
+                <m>\symfrak{sp}(2\symscr{l},\symbb{F})</m> es el conjunto de todos
+                los endomorfismos <m>x</m> de <m>V</m> tales que <m>f(x(v),w)=-f(w,x(w))\,</m>.
+
+
+            </p>
+            
+        </subsection>
         
+    </section>
+    <section xml:id="sec-lieder">
+        <title>Álgebras de Lie de derivaciones</title>
+        <p>
+            Sea <m>\symfrak{U}</m> un álgebra sobre <m>\symbb{F}</m> no necesariamente asociativa.
+            Una <em>derivación</em> es una función lineal <m>δ:\symfrak{U}\rightarrow\symfrak{U}</m>
+            tal que <m>δ(ab)=aδ(b)+δ(a)b\,</m>. El conjunto <m>\Der \symfrak{U}</m> de todas las
+            derivaciones de  <m>\symfrak{U}</m> es un subespacio de  <m>\End \symfrak{U}\,</m>.
+            Por otra parte, el conmutador <m>[δδ']</m> de dos derivaciones es una derivación,
+            así que <m>\Der \symfrak{U}</m>  es un   álgebra de Lie.
+        </p>
+        <p>
+            Como un álgebra de Lie <m>L</m> es un álgebra, <m>\Der L</m> es un álgebra de Lie.
+            Si <m>x\in L\,</m>, entonces <m>y\mapsto [xy]</m> es un endomorfismo de <m>L</m>,
+            que notaremos <m>\ad x\,</m>. De hecho, <m>\ad x\in \Der L\,</m>, porque la identidad
+            de Jacobi se puede escribir como <m>[x[yz]]=[[xy]z]+[y[xz]]\,</m>.
+            Estas derivaciones se denominan <em>internas</em>. La función <m>L \rightarrow \Der L</m>
+            que envía <m>x</m> a <m>\ad x</m> se denomina <em>representación adjunta</em> de <m>L\,</m>.
+        </p>
+        
+        
+    
     </section>
 </chapter>

@@ -6,6 +6,8 @@
     <macros>
       \newcommand{\R}{\mathbb R}
       \DeclareMathOperator{\End}{End}
+      \DeclareMathOperator{\Der}{Der}
+      \DeclareMathOperator{\ad}{ad}
     </macros>
     <latex-image-preamble>
       \usepackage{tikz}
