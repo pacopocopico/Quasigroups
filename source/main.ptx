@@ -8,9 +8,11 @@
       \DeclareMathOperator{\End}{End}
       \DeclareMathOperator{\Der}{Der}
       \DeclareMathOperator{\ad}{ad}
+      \DeclareMathOperator{\Ker}{Ker}
     </macros>
     <latex-image-preamble>
       \usepackage{tikz}
+      \usetikzlibrary{cd}
     </latex-image-preamble>
   </docinfo>
 
@@ -50,6 +52,7 @@
       </colophon>
     </frontmatter>
     <xi:include href="basics.ptx"/>
+    <xi:include href="ideals.ptx"/>
 
 <!--
     <chapter xml:id="chapter-title">
@@ -67,9 +70,9 @@
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
 
-      <colophon>
+      <!-- colophon>
         <p> This book was authored in <pretext />. </p>
-      </colophon>
+      </colophon -->
 
     </backmatter>
 

@@ -1,0 +1,79 @@
+<chapter xml:id="ch-ideals">
+    <title>Ideales y homomorfismos</title>
+    <section xml:id="sec-ideals">
+        <title>Ideales</title>
+        <p>
+            Un subespacio <m>\symcal{I}</m> de un álgebra de Lie <m>L</m> es un <em>ideal</em>
+            si <m>x\in L\wedge y\in \symcal{I}</m> implica <m>[xy]\in \symcal{I}\,</m>. 
+        </p>
+        <p>
+            Obviamente, <m>0</m> y <m>L</m> son ideales de <m>L</m>. Un ejemplo menos
+            trivial nos lo da el <em>centro</em> <m>Z(L)=\{z\in L\,:\,[xz]=0\,\text{para todo}\,x\in L\}</m>.
+            Un álgebra de Lie es abeliana si y solo si <m>Z(L)=L\,</m>. Otro ejemplo es el
+            <em>álgebra derivada</em> de <m>L</m>, que se nota <m>[LL]</m> y consiste en todas
+            las combinaciones lineales de <m>[xy]\,</m>.
+        </p>
+        <p>
+            Si <m>\symcal{I},\symcal{J}</m> son ideales de <m>L</m>, entonces
+            <me>
+                \symcal{I}+\symcal{J}=\{x+y\,:\,x\in\symcal{I},y\in\symcal{J}\}
+            </me>
+            es un ideal de <m>L\,</m>. De forma similar
+            <me>
+                [\symcal{I}\symcal{J}]=\left\{\sum x_iy_i\,:\,x_\in\symcal{I},y_i\in\symcal{J}\right\}
+            </me>
+            es un ideal. El álgebra derivada <m>[LL]</m> es un caso particular de esta construcción.
+            
+        </p>
+        <p>
+            Si <m>L</m> no tiene ideales no triviales y además <m>[LL]\neq 0</m> se dice que es <em>simple</em>.
+            En tal caso, <m>L=[LL]</m> y <m>Z(L)=0\,</m>.
+        </p>
+        <p>
+            Si <m>L</m> no es simple e <m>\symcal{I}</m> es un ideal de <m>L\,</m> podemos
+            construir el <em>álgebra cociente</em> <m>L/I\,</m>, que es un álgebra de Lie definiendo
+            <m>[x+\symcal{I},y+\symcal{I}]=[xy]+\symcal{I}\,</m>.
+        </p>
+    </section>
+    <section xml:id="sec-hom">
+        <title>Homomorfismos</title>
+        <p>
+            Los homomorfismos entre álgebras de Lie se definen de la forma previsible, esto es,
+            aplicaciones lineales <m>φ:L\rightarrow L'</m> tales que <m>φ([xy])=[φ(x)φ(y)]\,</m>.
+        </p>
+        <p>
+            El núcleo de un homomorfismo, 
+            <me>
+                \Ker φ = \{x\in L\,:\,φ(x)=0\}
+            </me>
+            es un ideal. Como en otras teorías algebraicas, tenemos los habituales teoremas
+            de homomorfismos.
+        </p>
+        <theorem xml:id="thm-hom">
+            <statement>
+                <p>
+                    Si <m>φ:L\rightarrow L'</m> es un homomorfismo de álgebras de Lie,
+                    <!-- me>
+                        \begin{tikzcd}
+                            A \arrow[rd] \arrow[r, "\phi"] &amp; B \\
+                                &amp; C
+                        \end{tikzcd}            
+                    </me -->
+                    <image source="images/crocodiles.png" width="50%" />
+
+                </p>
+            </statement>
+        </theorem>
+        
+
+    </section>
+    <section xml:id="sec-rp">
+        <title>Representaciones</title>
+        <p>
+            Una <em>representación</em> de un álgebra de Lie es un homomorfismo
+            <m>φ:L\rightarrow \symfrak{gl}(V)\,</m>.
+        </p>
+        
+    </section>
+    
+</chapter>

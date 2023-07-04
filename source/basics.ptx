@@ -20,6 +20,8 @@
             <m>[xx]=[yy]=0</m>, tenemos que
             <m>[xy]=-[yx]</m>. A la inversa, si  <m>\symbb{F}</m> es de característica
             diferente de <m>2</m>, esta igualdad implica la segunda condición.
+        </p>
+        <p>
             Por otra parte,  
             <m>
                 [x[yz]]=-[z[xy]]-[y[zx]]=[[xy]z]+[y[xz]]\,
@@ -121,7 +123,7 @@
         <p>
             Como un álgebra de Lie <m>L</m> es un álgebra, <m>\Der L</m> es un álgebra de Lie.
             Si <m>x\in L\,</m>, entonces <m>y\mapsto [xy]</m> es un endomorfismo de <m>L</m>,
-            que notaremos <m>\ad x\,</m>. De hecho, <m>\ad x\in \Der L\,</m>, porque la identidad
+            que notaremos <m>\ad_x\,</m>. De hecho, <m>\ad_x\in \Der L\,</m>, porque la identidad
             de Jacobi se puede escribir como <m>[x[yz]]=[[xy]z]+[y[xz]]\,</m>.
             Estas derivaciones se denominan <em>internas</em>. 
         </p>
