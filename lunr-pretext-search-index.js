@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Sección",
   "number": "1.4",
   "title": "Álgebras de Lie de derivaciones",
-  "body": " Álgebras de Lie de derivaciones  Sea un álgebra sobre no necesariamente asociativa. Una derivación es una función lineal tal que . El conjunto de todas las derivaciones de es un subespacio de . Por otra parte, el conmutador de dos derivaciones es una derivación, así que es un álgebra de Lie.  Como un álgebra de Lie es un álgebra, es un álgebra de Lie. Si , entonces es un endomorfismo de , que notaremos . De hecho, , porque la identidad de Jacobi se puede escribir como . Estas derivaciones se denominan internas . La función que envía a se denomina representación adjunta de .  "
+  "body": " Álgebras de Lie de derivaciones  Sea un álgebra sobre no necesariamente asociativa. Una derivación es una función lineal tal que . El conjunto de todas las derivaciones de es un subespacio de . Por otra parte, el conmutador de dos derivaciones es una derivación, así que es un álgebra de Lie.  Como un álgebra de Lie es un álgebra, es un álgebra de Lie. Si , entonces es un endomorfismo de , que notaremos . De hecho, , porque la identidad de Jacobi se puede escribir como . Estas derivaciones se denominan internas .  La función que envía a se denomina representación adjunta de .  "
 },
 {
   "id": "colophon-2",
